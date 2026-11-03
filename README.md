@@ -9,6 +9,21 @@
 - Host 半会自动守护本地应用服务：没运行就自动 `next start` 拉起（默认每 30 秒探测一次）
 - 面板带原生工具栏：连接状态 / 重新加载 / 新窗口打开；服务不可用时显示原生的部署提示页
 
+## ⚡ 一键安装（推荐）
+
+需要 **Node.js ≥ 20.9**（macOS / Linux；Windows 建议用 WSL）。
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/XuanCenXuKe/dsh-ziwei-doushu/main/install-ziwei.sh -o install-ziwei.sh
+bash install-ziwei.sh
+```
+
+脚本会自动完成：下载 ziwei-doushu 应用 → `npm ci` → 生成 `.env.local` → `npm run build`。
+完成后按提示安装插件即可（Discover 搜「紫微斗数」，或见下方安装命令）。
+
+> 如果 raw 地址打不开，用镜像：
+> `curl -fsSL https://ghproxy.net/https://raw.githubusercontent.com/XuanCenXuKe/dsh-ziwei-doushu/main/install-ziwei.sh -o install-ziwei.sh`
+
 > ⚠️ 这是「伴生插件」：它不打包应用本身，需要你先在本机部署 ziwei-doushu（见下方「前置部署」）。
 > 插件**不读取、不存储、不上传任何 API Key**；AI 解读的模型 Key 由你本地的应用 `.env.local` 管理。
 
@@ -41,8 +56,10 @@ Node 可执行文件按 `ZIWEI_NODE_BIN` → 应用目录同级 `tools/node-*/bi
 从 GitHub 安装时使用可复现的提交引用：
 
 ```
-plugin_manager install_bundle(target='github:XuanCenXuKe/dsh-ziwei-doushu#5ed965d')
+plugin_manager install_bundle(target='github:XuanCenXuKe/dsh-ziwei-doushu')
 ```
+
+> 长期使用建议在 dshfind 广场（Discover）搜索「紫微斗数」一键安装。
 
 仓库地址：https://github.com/XuanCenXuKe/dsh-ziwei-doushu
 
