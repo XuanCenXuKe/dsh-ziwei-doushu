@@ -1,6 +1,6 @@
 {
   "name": "dsh-ziwei-doushu",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "type": "module",
   "description": "Open the local Zi Wei Dou Shu (紫微斗数) charting app with AI readings inside DeepSeek Harness.",
