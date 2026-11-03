@@ -1,0 +1,53 @@
+{
+  "name": "dsh-ziwei-doushu",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Open the local Zi Wei Dou Shu (紫微斗数) charting app with AI readings inside DeepSeek Harness.",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "ziwei",
+    "ziwei-doushu",
+    "紫微斗数"
+  ],
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "docs/preview.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XuanCenXuKe/dsh-ziwei-doushu.git"
+  },
+  "homepage": "https://github.com/XuanCenXuKe/dsh-ziwei-doushu",
+  "bugs": {
+    "url": "https://github.com/XuanCenXuKe/dsh-ziwei-doushu/issues"
+  }
+}
