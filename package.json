@@ -1,7 +1,6 @@
 {
   "name": "dsh-ziwei-doushu",
   "version": "2.0.1",
-  "private": true,
   "type": "module",
   "description": "Open the local Zi Wei Dou Shu (紫微斗数) charting app with AI readings inside DeepSeek Harness.",
   "keywords": [
@@ -49,5 +48,8 @@
   "homepage": "https://github.com/XuanCenXuKe/dsh-ziwei-doushu",
   "bugs": {
     "url": "https://github.com/XuanCenXuKe/dsh-ziwei-doushu/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
