@@ -41,8 +41,10 @@ Node 可执行文件按 `ZIWEI_NODE_BIN` → 应用目录同级 `tools/node-*/bi
 从 GitHub 安装时使用可复现的提交引用：
 
 ```
-plugin_manager install_bundle(target='github:<owner>/dsh-ziwei-doushu#<commit>')
+plugin_manager install_bundle(target='github:XuanCenXuKe/dsh-ziwei-doushu#5ed965d')
 ```
+
+仓库地址：https://github.com/XuanCenXuKe/dsh-ziwei-doushu
 
 安装后左侧栏会出现「紫微斗数」面板图标（第 20 位，位于「定时任务」与「Mnemon」之间）。
 
